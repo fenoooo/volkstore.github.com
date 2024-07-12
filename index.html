@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volkstore - Premium Watches</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script>
+        // JavaScript function to display current date and time
+        function displayDateTime() {
+            let now = new Date();
+            let dateTime = now.toLocaleString();
+            document.getElementById('datetime').innerText = dateTime;
+        }
+
+        // Function to greet the user
+        function greetUser() {
+            let userName = "Ozaydin";
+            if (userName) {
+                document.getElementById('greeting').innerText = "Welcome to Volkstore, " + userName + "!";
+            }
+        }
+
+        // Call the displayDateTime function every second
+        setInterval(displayDateTime, 1000);
+    </script>
+</head>
+<body onload="greetUser()">
+    <div id="page">
+        <div id="header">
+            <div id="logo">
+                <a href="#home"><img src="volkstore.png" alt="LOGO"></a>
+            </div>
+            <form action="#home" method="post" class="searchbar">
+                <input type="text" value="Search" onFocus="this.select();" onMouseUp="return false;">
+                <input type="submit" value="Go">
+            </form>
+            <ul id="navigation">
+                <li class="selected"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /#header -->
+
+        <div id="contents">
+            <section id="home">
+                <div id="adbox">
+                    <img src="daytona.jpg" alt="Premium Watches" height="444" width="630">
+                    <div class="info">
+                        <h1 id="greeting">Welcome to Volkstore!</h1>
+                        <p>Discover our exclusive collection of premium watches. At Volkstore, we offer timeless designs and unparalleled craftsmanship.</p>
+                        <a href="#about" class="more">Learn More</a>
+                    </div>
+                </div>
+                <!-- /#adbox -->
+                <h1>Featured Watches</h1>
+                <div class="section">
+                    <p class="column2">Explore our range of watches that blend style and functionality. Perfect for every occasion, our watches are designed to make a statement.</p>
+                    <p class="column2">Each watch is crafted with precision and attention to detail, ensuring that you get the best quality and performance. Browse our collection today.</p>
+                    <h4>Experience luxury and elegance with Volkstore watches. <a href="#contact">Contact us for more info &gt;&gt;</a></h4>
+                </div>
+                <ul id="categories" class="section">
+                    <li>
+                        <img src="images/gear.png" alt="Precision Engineering" height="53" width="60">
+                        <h3>Precision Engineering</h3>
+                        <p>Our watches are engineered with precision to ensure accurate timekeeping and long-lasting performance.</p>
+                        <a href="#contact" class="select">Select</a>
+                    </li>
+                    <li>
+                        <img src="images/graph.png" alt="Timeless Design" height="53" width="60">
+                        <h3>Timeless Design</h3>
+                        <p>Discover designs that stand the test of time, combining classic aesthetics with modern functionality.</p>
+                        <a href="#contact" class="select">Select</a>
+                    </li>
+                    <li>
+                        <img src="images/globe.png" alt="Global Reach" height="53" width="60">
+                        <h3>Global Reach</h3>
+                        <p>Volkstore watches are loved by customers worldwide, offering a touch of elegance and sophistication.</p>
+                        <a href="#contact" class="select">Select</a>
+                    </li>
+                </ul>
+                <!-- /#categories -->
+                <div id="datetime" style="text-align: center; margin-top: 20px; font-size: 1.2em;"></div>
+            </section>
+
+            <section id="about">
+                <h1>About Volkstore</h1>
+                <p>Volkstore is a premium watch retailer dedicated to offering timeless designs and unparalleled craftsmanship. Our mission is to provide our customers with the finest watches that blend style and functionality. Each of our watches is crafted with precision and attention to detail, ensuring long-lasting performance and accurate timekeeping. We believe that a watch is more than just a timepiece; it's a statement of elegance and sophistication.</p>
+                <p>Founded in 2024, Volkstore has quickly become a trusted name in the watch industry. Our commitment to quality and customer satisfaction has earned us a loyal customer base worldwide. Explore our collection and discover the perfect watch that suits your style and needs.</p>
+            </section>
+
+            <section id="contact">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or need assistance, please feel free to contact us. We are here to help you find the perfect watch and ensure that you have a great shopping experience with Volkstore.</p>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+        </div>
+        <!-- /#contents -->
+
+        <div id="footer">
+            <div>
+                <ul id="links">
+                    <li>
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#home">FAQ</a></li>
+                            <li><a href="#home">Shipping & Returns</a></li>
+                            <li><a href="#home">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>About Volkstore</h4>
+                        <ul>
+                            <li><a href="#about">Our Story</a></li>
+                            <li><a href="#about">Careers</a></li>
+                            <li><a href="#about">Press</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Follow Us</h4>
+                        <ul id="connect">
+                            <li><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter">Twitter</a></li>
+                            <li><a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook">Facebook</a></li>
+                            <li><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus">Google +</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /#links -->
+                <p class="footnote">© 2024 Volkstore. All rights reserved. | ID: 23229580, Nathaniel Fedellano Miarsa</p>
+            </div>
+        </div>
+        <!-- /#footer -->
+    </div>
+    <!-- /#page -->
+</body>
+</html>
